@@ -15,10 +15,10 @@ int g = 57;
 int k = 49;
 int l = 1800;
 
-int max1 = Max(a, b, c);
-int max2 = Max(d, e, f);
-int max3 = Max(g, k, l);
 
-int max = Max(max1, max2, max3);
+int max = Max(
+    Max(a, b, c), 
+    Max(d, e, f), 
+    Max(g, k, l));
 
 Console.WriteLine(max);
